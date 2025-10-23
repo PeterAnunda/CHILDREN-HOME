@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Children's Homes Management Platform</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+
+    <header>
+        <div class="logo">MKU Children's Platform</div>
+        <nav>
+            <a href="#mission">Our Mission</a>
+            <a href="#features">Platform Features</a>
+            <a href="#register">Register/Login</a>
+            <a href="directory.php"><button class="donate-btn-header">DONATE SECURELY</button></a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>A Unified Digital Platform for Children’s Shelters</h1>
+            <p>Streamlining support, enhancing transparency, and connecting homes with donors, volunteers, and adoptive families.</p>
+            <button id="mainCtaBtn" class="cta-btn-main">View Homes Directory</button>
+        </div>
+    </section>
+
+    <section class="mission" id="mission">
+        <h2>Bridging the Support Gap</h2>
+        [cite_start]<p class="summary">Many institutions, like Happy Life Children’s Home, face significant challenges including limited funding, low visibility, and fragmented communication systems[cite: 26, 32]. [cite_start]This platform addresses the lack of a unified system that currently results in disjointed, inefficient engagement with supporters[cite: 31, 35].</p>
+        <div class="mission-cards">
+            <div class="card">
+                <h3>Visibility</h3>
+                [cite_start]<p>A searchable directory helps users find homes based on location and needs[cite: 49].</p>
+            </div>
+            <div class="card">
+                <h3>Transparency</h3>
+                [cite_start]<p>Secure payment and data validation algorithms build trust with donors[cite: 39, 50].</p>
+            </div>
+            <div class="card">
+                <h3>Efficiency</h3>
+                [cite_start]<p>Streamlined tools for adoption, volunteering, and donations centralize all support activities[cite: 14, 38].</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="features" id="features">
+        <h2>Key Platform Features</h2>
+        <div class="feature-list">
+            <div class="feature-item">
+                <h3>1. Searchable Home Directory</h3>
+                [cite_start]<p>Find children's homes based on location, services, and specific needs using a simple search tool[cite: 49, 52].</p>
+            </div>
+            <div class="feature-item">
+                <h3>2. Secure Donation Gateway</h3>
+                [cite_start]<p>Facilitate secure financial contributions with encryption, fraud protection, and real-time transaction records[cite: 50, 58].</p>
+            </div>
+            <div class="feature-item">
+                <h3>3. Streamlined Adoption Process</h3>
+                [cite_start]<p>Detailed adoption guidelines, eligibility checkers, and a document submission portal to simplify the legal process[cite: 51].</p>
+            </div>
+            <div class="feature-item">
+                <h3>4. Volunteer Management</h3>
+                [cite_start]<p>Tools for coordinating and tracking volunteer activities and schedules[cite: 38].</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="register-section" id="register">
+        <h2>Get Started</h2>
+        <div class="register-form-container">
+            <h3>Login or Register</h3>
+            <form id="loginForm" method="POST" action="login_process.php">
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                <button type="submit" id="submitBtn">Login / Register</button>
+            </form>
+            <p id="formMessage" class="message"></p>
+        </div>
+        [cite_start]<p class="note">Security measures like SSL encryption and Two-Factor Authentication (2FA) are implemented for all accounts[cite: 66, 146, 147].</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Children’s Homes Management Platform. [cite_start]Developed by Mount Kenya University (BSCCS/2022/50917)[cite: 2].</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

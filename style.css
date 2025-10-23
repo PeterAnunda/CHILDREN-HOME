@@ -1,0 +1,232 @@
+/* --- Variables & Global Reset --- */
+:root {
+    --primary-blue: #004c99; /* Deep, professional blue (MKU style) */
+    --secondary-green: #28a745; /* Trustworthy green for actions */
+    --background-light: #f8f9fa;
+    --text-dark: #343a40;
+    --text-light: #ffffff;
+    --card-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-dark);
+    background-color: var(--background-light);
+}
+
+/* --- Header & Navigation --- */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background-color: var(--text-light);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.6em;
+    font-weight: 700;
+    color: var(--primary-blue);
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-dark);
+    margin: 0 15px;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: var(--primary-blue);
+}
+
+/* --- Buttons (Standard) --- */
+button {
+    cursor: pointer;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.donate-btn-header {
+    background-color: var(--secondary-green);
+    color: var(--text-light);
+}
+
+.donate-btn-header:hover {
+    background-color: #1e7e34;
+}
+
+/* --- Hero Section --- */
+.hero {
+    background: var(--primary-blue);
+    color: var(--text-light);
+    padding: 100px 5%;
+    min-height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 1.3em;
+    margin-bottom: 30px;
+}
+
+.cta-btn-main {
+    background-color: #ffc107; /* Bright, engaging yellow */
+    color: var(--text-dark);
+    font-size: 1.3em;
+    padding: 15px 35px;
+}
+
+.cta-btn-main:hover {
+    background-color: #e0a800;
+    transform: translateY(-2px);
+}
+
+/* --- General Section Styling --- */
+section {
+    padding: 60px 5%;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 40px;
+    color: var(--primary-blue);
+    border-bottom: 3px solid var(--secondary-green);
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.summary {
+    max-width: 800px;
+    margin: 0 auto 50px;
+    font-size: 1.1em;
+}
+
+/* --- Mission Cards --- */
+.mission-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.card {
+    flex: 1;
+    background: var(--text-light);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: var(--card-shadow);
+    text-align: left;
+}
+
+.card h3 {
+    color: var(--secondary-green);
+    margin-bottom: 10px;
+    font-size: 1.4em;
+}
+
+/* --- Features List --- */
+.features {
+    background-color: #e9ecef;
+}
+
+.feature-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.feature-item {
+    background: var(--text-light);
+    padding: 25px;
+    border-left: 5px solid var(--primary-blue);
+    text-align: left;
+    box-shadow: var(--card-shadow);
+    border-radius: 5px;
+}
+
+.feature-item h3 {
+    color: var(--primary-blue);
+    margin-bottom: 8px;
+}
+
+/* --- Registration Section --- */
+.register-section {
+    background-color: var(--text-light);
+}
+
+.register-form-container {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 30px;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    box-shadow: var(--card-shadow);
+}
+
+.register-form-container input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+}
+
+#submitBtn {
+    width: 100%;
+    background-color: var(--primary-blue);
+    color: var(--text-light);
+    padding: 12px;
+}
+
+#submitBtn:hover {
+    background-color: #003366;
+}
+
+.message {
+    margin-top: 15px;
+    font-weight: bold;
+    min-height: 20px;
+}
+
+.note {
+    font-size: 0.9em;
+    color: #6c757d;
+    margin-top: 20px;
+}
+
+/* --- Footer --- */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--text-dark);
+    color: var(--text-light);
+    font-size: 0.9em;
+}
