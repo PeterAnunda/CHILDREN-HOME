@@ -1,0 +1,225 @@
+/* ======================================================== */
+/* === UPDATED STYLES FOR CHILDREN'S PLATFORM PROTOTYPE === */
+/* === THEME: EARTHY FOREST (Greens and Deep Gray) ======== */
+/* ======================================================== */
+
+/* --- 1. New Variables & Global Reset --- */
+:root {
+    /* NEW COLOR PALETTE */
+    --background-color: #F0F5F2; /* Mist Green (Main Background) */
+    --primary-color: #2F5D62;    /* Forest Green (Headers, Primary Buttons, Structure) */
+    --accent-color: #5E8B7E;     /* Moss Green (CTAs, Links, Emphasis) */
+    --neutral-gray: #A7C4BC;    /* Seafoam (Subtle Borders, Secondary Background) */
+    --text-dark: #2E2E2E;        /* Deep Gray (Main Text) */
+    --text-light: #FFFFFF;       /* White */
+    --card-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    --success-color: #79A39D;    /* Darker Sage for success/database checks */
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-dark); 
+    background-color: var(--background-color);
+}
+
+/* --- 2. Header & Navigation --- */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 5%; 
+    background-color: var(--text-light); 
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 2px solid var(--neutral-gray);
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: 700;
+    color: var(--primary-color); 
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-dark); 
+    margin: 0 15px;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: var(--accent-color); 
+}
+
+/* --- 3. Buttons & CTAs --- */
+button {
+    cursor: pointer;
+    border: none;
+    padding: 12px 25px; 
+    border-radius: 8px; 
+    font-weight: 600;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.donate-btn-header {
+    background-color: var(--accent-color); 
+    color: var(--text-light); 
+}
+
+.donate-btn-header:hover {
+    background-color: #517a6a; 
+    transform: translateY(-1px);
+}
+
+.cta-btn-main {
+    background-color: var(--primary-color); 
+    color: var(--text-light); 
+    font-size: 1.3em;
+    padding: 15px 35px;
+    border-radius: 8px; 
+}
+
+.cta-btn-main:hover {
+    background-color: var(--accent-color); 
+}
+
+/* --- 4. Sections & Containers --- */
+section {
+    padding: 80px 5%;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.5em; 
+    margin-bottom: 50px;
+    color: var(--primary-color); 
+    position: relative;
+}
+
+/* Underline effect for H2 */
+h2::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 3px;
+    background: var(--accent-color); 
+    margin: 10px auto 0;
+    border-radius: 50px;
+}
+
+/* Hero Section */
+.hero {
+    background-color: var(--neutral-gray); 
+    color: var(--text-dark); 
+    padding: 120px 5%;
+    min-height: 45vh;
+}
+
+.hero h1 {
+    font-size: 3.8em;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+/* Mission Cards & Feature Bubbles */
+.mission-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+    gap: 30px; 
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.card {
+    flex: 1;
+    background: var(--text-light); 
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: var(--card-shadow); 
+    text-align: center;
+    border-top: 5px solid var(--accent-color); 
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    color: var(--primary-color); 
+    font-size: 1.5em;
+}
+
+/* Specific Bubble Layout Override for Features Section */
+.features .mission-cards {
+    gap: 30px; 
+    max-width: 1000px;
+}
+
+.features .mission-cards .card {
+    flex: 0 1 calc(50% - 15px); /* Forces two cards per row with margin */
+    min-width: 300px;
+    margin: 0;
+    padding: 35px 25px; 
+}
+
+/* Features List Section Styling */
+.features {
+    background-color: var(--background-color); 
+}
+
+
+/* Registration/Form Container */
+.register-form-container {
+    max-width: 450px;
+    margin: 20px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: var(--card-shadow);
+    background-color: var(--text-light); 
+    color: var(--text-dark); 
+}
+
+.register-form-container input,
+.register-form-container select,
+.register-form-container textarea {
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid var(--neutral-gray);
+    border-radius: 6px;
+    width: 100%;
+    color: var(--text-dark);
+}
+
+.register-form-container button {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+}
+
+/* Table Headers (e.g., directory.php) */
+.adoption-table th {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 25px;
+    background-color: var(--primary-color); 
+    color: var(--text-light); 
+    font-size: 0.9em;
+}
