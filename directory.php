@@ -175,7 +175,7 @@ $result = $conn->query($sql);
 
 <div class="directory-container">
     <h2>Children's Homes Directory</h2>
-    <p style="text-align:center;">This directory is pulled directly from the <strong>children_home</strong> database.</p>
+    <!-- <p style="text-align:center;">This directory is pulled directly from the <strong>children_home</strong> database.</p> -->
 
     <?php if ($result->num_rows > 0): ?>
         <table class="directory-table">
